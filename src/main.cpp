@@ -15,8 +15,6 @@ int main()
 
         ClearBackground(RAYWHITE);
 
-        DrawText("It's Hayashi's!", 190, 200, 20, BLACK);
-
         EndDrawing();
     }
 

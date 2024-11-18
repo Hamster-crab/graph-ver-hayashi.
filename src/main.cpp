@@ -62,11 +62,11 @@ int main()
 
         if (calcsummon)
         {
-            // #ifdef _WIN32
-            //     system("inm.exe"); // Windows の場合
-            // #else
-            //     system("./app/graph"); // Linux または macOS の場合
-            // #endif
+            #ifdef _WIN32
+                system("inm.exe"); // Windows の場合
+            #else
+                system("./app/calc"); // Linux または macOS の場合
+            #endif
 
             calcsummon = false;
         }

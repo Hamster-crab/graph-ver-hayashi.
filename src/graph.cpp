@@ -17,7 +17,7 @@ int main()
     const int screenWidth = 900;
     const int screenHeight = 600;
 
-    InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
+    InitWindow(screenWidth, screenHeight, "graph");
 
     SetTargetFPS(60);
 

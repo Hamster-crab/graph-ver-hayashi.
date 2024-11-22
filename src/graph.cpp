@@ -15,7 +15,7 @@ void DrawTextInt(const char *text, int drawInt, int posX, int posY, int fontSize
 int main()
 {
     const int screenWidth = 900;
-    const int screenHeight = 600;
+    const int screenHeight = 900;
 
     InitWindow(screenWidth, screenHeight, "graph");
 
@@ -66,9 +66,28 @@ int main()
 
         BeginDrawing();
         ClearBackground(RAYWHITE);
-        DrawRectangle(0, y, screenWidth, 2.8, GREEN);
-        DrawRectangle(x, 0, 2.8, screenHeight, GREEN);
-        DrawCircle (x, y, 4, BLACK);
+        DrawRectangle(0, y, screenWidth, 4, GREEN);
+        DrawRectangle(x, 0, 4, screenHeight, GREEN);
+
+        DrawRectangle(0, y - 30, screenWidth, 4, GRAY);
+        DrawRectangle(0, y - 60, screenWidth, 4, GRAY);
+        DrawRectangle(0, y - 90, screenWidth, 4, GRAY);
+        DrawRectangle(0, y - 120, screenWidth, 4, GRAY);
+        DrawRectangle(0, y - 150, screenWidth, 4, GRAY);
+        DrawText("5", x + 5, y - 150, 30, GREEN);
+        DrawRectangle(0, y - 180, screenWidth, 4, GRAY);
+        DrawRectangle(0, y - 210, screenWidth, 4, GRAY);
+        DrawRectangle(0, y - 240, screenWidth, 4, GRAY);
+        DrawRectangle(0, y - 270, screenWidth, 4, GRAY);
+        DrawRectangle(0, y - 300, screenWidth, 4, GRAY);
+        DrawRectangle(0, y - 330, screenWidth, 4, GRAY);
+        DrawRectangle(0, y - 360, screenWidth, 4, GRAY);
+        DrawRectangle(0, y - 390, screenWidth, 4, GRAY);
+        DrawRectangle(0, y - 420, screenWidth, 4, GRAY);
+
+
+
+        DrawCircle (x, y, 8, BLACK);
 
         if (hirei)
         {

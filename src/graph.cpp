@@ -14,8 +14,8 @@ void DrawTextInt(const char *text, int drawInt, int posX, int posY, int fontSize
 
 int main()
 {
-    const int screenWidth = 900;
-    const int screenHeight = 900;
+    const int screenWidth = 650;
+    const int screenHeight = 650;
 
     InitWindow(screenWidth, screenHeight, "graph");
 
@@ -28,10 +28,10 @@ int main()
     double y = screenHeight / 2;
     double a = 1;
 
-    Rectangle aUP = { 303, 155, 20, 25 };
-    Rectangle aDOWN = { 303, 190, 20, 25 };
+    Rectangle aUP = { 303, 305, 20, 25 };
+    Rectangle aDOWN = { 303, 340, 20, 25 };
     Rectangle hireiOn = { 270, 80, 13, 13 };
-    Rectangle hanpireiOn = { 650, 80, 13, 13};
+    Rectangle hanpireiOn = { 270, 200, 13, 13};
 
     while (!WindowShouldClose())
     {
@@ -66,28 +66,28 @@ int main()
 
         BeginDrawing();
         ClearBackground(RAYWHITE);
-        DrawRectangle(0, y, screenWidth, 4, GREEN);
-        DrawRectangle(x, 0, 4, screenHeight, GREEN);
+        DrawRectangle(0, y, screenWidth, 3, DARKBLUE);
+        DrawRectangle(x, 0, 3, screenHeight, DARKBLUE);
 
-        DrawRectangle(0, y - 30, screenWidth, 4, GRAY);
-        DrawRectangle(0, y - 60, screenWidth, 4, GRAY);
-        DrawRectangle(0, y - 90, screenWidth, 4, GRAY);
-        DrawRectangle(0, y - 120, screenWidth, 4, GRAY);
-        DrawRectangle(0, y - 150, screenWidth, 4, GRAY);
-        DrawText("5", x + 5, y - 150, 30, GREEN);
-        DrawRectangle(0, y - 180, screenWidth, 4, GRAY);
-        DrawRectangle(0, y - 210, screenWidth, 4, GRAY);
-        DrawRectangle(0, y - 240, screenWidth, 4, GRAY);
-        DrawRectangle(0, y - 270, screenWidth, 4, GRAY);
-        DrawRectangle(0, y - 300, screenWidth, 4, GRAY);
-        DrawRectangle(0, y - 330, screenWidth, 4, GRAY);
-        DrawRectangle(0, y - 360, screenWidth, 4, GRAY);
-        DrawRectangle(0, y - 390, screenWidth, 4, GRAY);
-        DrawRectangle(0, y - 420, screenWidth, 4, GRAY);
+        DrawRectangle(0, y - 10, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 20, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 30, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 40, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 50, screenWidth, 2, BLUE);
+        // DrawText("5", x + 5, y - 150, 30, GREEN);
+        DrawRectangle(0, y - 60, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 70, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 80, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 90, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 100, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 110, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 120, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 130, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 140, screenWidth, 2, BLUE);
 
 
 
-        DrawCircle (x, y, 8, BLACK);
+        DrawCircle (x + 1, y + 1, 5, BLACK);
 
         if (hirei)
         {
@@ -96,22 +96,22 @@ int main()
 
         if (settings)
         {
-            DrawRectangle(screenWidth / 100, screenHeight / 100, 880, 580, GRAY);
+            DrawRectangle(screenWidth / 100, screenHeight / 100, 630, 580, GRAY);
             DrawText("y = ax", 220, 20, 30, BLACK);
             DrawCircle(hireiOn.x, hireiOn.y, hireiOn.width + 4, BLACK);
             DrawCircle(hireiOn.x, hireiOn.y, hireiOn.width, WHITE);
             if (hirei) DrawCircle(270, 80, 8, GREEN);
 
-            DrawText("a = ", 80, 150, 80, BLACK);
-            DrawRectangle(230, 150, 70, 70, BLACK);
-            DrawRectangle(235, 155, 60, 60, WHITE);
-            DrawTextInt("", a, 240, 155, 60, BLACK);
+            DrawText("a = ", 80, 300, 80, BLACK);
+            DrawRectangle(230, 300, 70, 70, BLACK);
+            DrawRectangle(235, 305, 60, 60, WHITE);
+            DrawTextInt("", a, 240, 305, 60, BLACK);
             DrawRectangle(aUP.x, aUP.y, aUP.width, aUP.height, WHITE);
             DrawRectangle(aDOWN.x, aDOWN.y, aDOWN.width, aDOWN.height, WHITE);
 
-            DrawText("y = a/x", 600, 20, 30, BLACK);
-            DrawCircle(650, 80, 18, BLACK);
-            DrawCircle(650, 80, 13, WHITE);
+            DrawText("y = a/x", 220, 130, 30, BLACK);
+            DrawCircle(hanpireiOn.x, hanpireiOn.y, hanpireiOn.width, BLACK);
+            DrawCircle(hanpireiOn.x, hanpireiOn.y, hanpireiOn.width, WHITE);
             if (hanpirei) DrawCircle(650, 80, 8, GREEN);
 
             DrawRectangle(730, 530, 150, 40, RED);

@@ -74,7 +74,6 @@ int main()
         DrawRectangle(0, y - 30, screenWidth, 2, BLUE);
         DrawRectangle(0, y - 40, screenWidth, 2, BLUE);
         DrawRectangle(0, y - 50, screenWidth, 2, BLUE);
-        // DrawText("5", x + 5, y - 150, 30, GREEN);
         DrawRectangle(0, y - 60, screenWidth, 2, BLUE);
         DrawRectangle(0, y - 70, screenWidth, 2, BLUE);
         DrawRectangle(0, y - 80, screenWidth, 2, BLUE);
@@ -84,6 +83,24 @@ int main()
         DrawRectangle(0, y - 120, screenWidth, 2, BLUE);
         DrawRectangle(0, y - 130, screenWidth, 2, BLUE);
         DrawRectangle(0, y - 140, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 150, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 160, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 170, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 180, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 190, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 200, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 210, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 220, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 230, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 240, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 250, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 260, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 270, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 280, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 290, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 300, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 310, screenWidth, 2, BLUE);
+        DrawRectangle(0, y - 320, screenWidth, 2, BLUE);
 
 
 
